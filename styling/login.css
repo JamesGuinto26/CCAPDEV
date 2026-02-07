@@ -157,3 +157,8 @@
     border-width: 2px;
     border-color: rgb(255, 255, 255);
 }
+
+.btn-container a {
+    text-decoration: none;
+    font-size: 15px;
+}
