@@ -74,12 +74,21 @@
 
 .login {
     min-height: 100vh;
-
-    /* Insert BG Image */
-
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.login::before {
+    content: "";
+    inset: 0;
+    
+    position: absolute;
+    background-image: url("/images/resto.webp");
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px);
+    z-index: -1;
 }
 
 .login-form {
