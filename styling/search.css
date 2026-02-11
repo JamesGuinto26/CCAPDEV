@@ -214,9 +214,16 @@ main {
     flex: 1;
 }
 
+.about-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(49, 103, 175);
+}
+
 .about-left img {
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
     object-fit: cover;
 }
 
@@ -237,5 +244,6 @@ main {
 .about-right p {
     font-size: 18px;
     line-height: 1.6;
+    text-align: justify;
     color: #333;
 }
