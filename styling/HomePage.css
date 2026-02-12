@@ -1,0 +1,327 @@
+/* NAVBAR */
+
+* {
+    font-family: Verdana;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(49, 103, 175);
+    padding: 25px 40px;
+    z-index: 1000;
+}
+
+.nav-logo {
+    text-decoration: none;
+}
+
+.logo-text {
+    color: white;
+    font-size: 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 15px;
+    color: white;
+    border-radius: 50px;
+}
+
+.profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+    border-style: solid;
+    border-color: rgb(26, 55, 134);
+    border-width: 2px;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 120%;
+    right: 0;
+    background-color: white;
+    border-radius: 10px;
+    min-width: 180px;
+    list-style: none;
+    padding: 8px 0;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+
+    opacity: 0%;
+    visibility: hidden;
+    transform: translate(10px);
+    transition: 0.2s ease;
+    z-index: 999;
+}
+
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(0);
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 10px 15px;
+    color: rgb(26, 55, 134);
+    font-size: 14px;
+    border-radius: 0;
+}
+
+.dropdown-menu li a:hover {
+    background-color: rgba(49, 103, 175, 0.1);
+}
+
+.dropdown-pfp {
+    position: relative;   
+    list-style: none;
+}
+
+.dropdown-pfp img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+}
+
+.dropdown-pfp:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-pfp .dropdown-menu li a {
+    display: block;
+    padding: 10px 15px;
+    color: rgb(26, 55, 134);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.dropdown-pfp .dropdown-menu li a:hover {
+    background-color: rgba(49, 103, 175, 0.1);
+}
+
+/* Start of Home */
+
+body {
+    background: #f3f4f6;
+}
+
+.home-banner {
+    margin-top: 80px;
+    height: 260px;
+    position: relative;
+    overflow: hidden;
+}
+
+.home-banner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: url("/images/searchBG.jpg");
+    background-size: cover;
+    background-position: center;
+    filter: blur(6px);
+    transform: scale(1.05);
+    z-index: 0;
+}
+
+.home-banner::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+    z-index: 1;
+}
+
+.home-overlay {
+    position: relative;
+    z-index: 2;
+    color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.home-overlay h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.home-overlay p {
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.discover-btn {
+    background-color: rgb(49, 103, 175);
+    color: white;
+    padding: 12px 20px;  
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.discover-btn:hover {
+    background: white;
+    color: rgb(49, 103, 175);
+}
+
+
+/* Start of Slider */
+
+.featured-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 40px 15px;
+}
+
+.featured-header h2 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.featured-header .see-all {
+    color: rgb(49, 103, 175);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.featured-header .see-all:hover {
+    text-decoration: underline;
+}
+
+.featured-slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin: 40px auto;
+}
+
+.slides {
+    display: flex;
+    gap: 25px;
+    transition: transform 0.4s ease;
+    padding: 0 60px;
+}
+
+.resto-card {
+    background: rgb(44, 84, 136);
+    border-radius: 14px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    width: calc(100% / 3); /* Since 3 cards per slide */
+    display: none;
+}
+
+.resto-card.displaySlide {
+    display: block;
+}
+
+.resto-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.resto-info {
+    padding: 12px;
+}
+
+.resto-card h3 {
+    color: white;    
+    margin-bottom: 6px;
+}
+
+.resto-card p {
+    color: white;    
+}
+
+.next-btn, .prev-btn {
+    position: absolute;
+    top: 50%;
+    font-weight: bold;
+    transform: translateY(-50%);
+    background: rgb(49, 103, 175);
+    color: white;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+.about-section {
+    background: rgb(47, 81, 124);
+    padding: 60px 40px;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 120px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.about-image img {
+    width: 450px;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.about-text h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.about-text p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: white;
+}
