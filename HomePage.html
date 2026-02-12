@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - EATSTAGRAM</title>
+    <link rel = "stylesheet" href = "styling/HomePage.css">
+</head>
+<body>
+    <header>
+        <nav class = "nav-bar">
+            <a href = "searchResto.html" class = "nav-logo">
+                <h2 class = "logo-text">🍟 EATSTAGRAM</h2>
+            </a>
+            
+            <ul class="nav-links">
+
+                <a href = "HomePage.html">HOME</a>
+
+                <li class="dropdown">
+                    <a href="#">RESTAURANTS</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="searchResto.html">Search Restaurants</a></li>
+                        <li><a href="viewRestaurants.html">View Restaurants</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#">REVIEWS</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Search Reviews</a></li>
+                        <li><a href="#">My Reviews</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown-pfp">
+                    <img src="images/profile.png">
+                    <ul class="dropdown-menu">
+                        <li><a href="#">View Profile</a></li>
+                        <li><a href="#">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="home-banner">
+        <div class="home-overlay">
+            <h1>Discover restaurants near you</h1>
+            <p>Share reviews and find new restaurants for you</p>
+            <a href="#" class="discover-btn">Add Your Reviews</a>
+        </div>
+    </div>
+
+    <div class="featured-header">
+        <h2>Featured Restaurants</h2>
+        <a href="viewRestaurants.html" class="see-all">Check All Restaurants</a>
+    </div>
+
+    <div class = "featured-slider">
+        <div class = "slides">
+
+            <div class="resto-card">
+                <img src="images/chele.jpg">
+                <div class="resto-info">
+                    <h3>Gallery By Chele</h3>
+                    <p>⭐ 4.7 - Yummy! Yummy!</p>
+                </div>
+            </div>
+
+            <div class="resto-card">
+                <img src="images/chilis.jpg">
+                <div class="resto-info">
+                    <h3>Chili's</h3>
+                    <p>⭐ 4.6 - Yummy! Yummy!</p>
+                </div>
+            </div>
+
+            <div class="resto-card">
+                <img src="images/manam.jpg">
+                <div class="resto-info">
+                    <h3>Manam</h3>
+                    <p>⭐ 4.8 - Yummy! Yummy!</p>
+                </div>
+            </div>
+
+            <div class="resto-card">
+                <img src="images/SeascapeVillage.png">
+                <div class="resto-info">
+                    <h3>Seascape Village</h3>
+                    <p>⭐ 4.8 - Yummy! Yummy!</p>
+                </div>
+            </div>
+
+            <div class="resto-card">
+                <img src="images/Barcino.jpg">
+                <div class="resto-info">
+                    <h3>Barcino</h3>
+                    <p>⭐ 5.0 - Yummy! Yummy!</p>
+                </div>
+            </div>
+
+            <div class="resto-card">
+                <img src="images/laCreperie.jpg">
+                <div class="resto-info">
+                    <h3>La Creperie</h3>
+                    <p>⭐ 4.9 - Yummy! Yummy!</p>
+                </div>
+            </div>
+
+        </div>
+        <button class="prev-btn">&#10094</button>
+        <button class="next-btn">&#10095</button>
+    </div>
+
+    <script src = "javascript/slider.js"></script>
+
+
+    <div class="about-section">
+        <div class="about-container">
+        
+            <div class="about-image">
+                <img src="images/placeholder.jpeg" alt="About EATSTAGRAM">
+            </div>
+
+            <div class="about-text">
+                <h2>About Us</h2>
+                <p>
+                    EATSTAGRAM is your go-to platform for discovering amazing restaurants
+                    near you. We connect food lovers with the best dining experiences by
+                    providing honest reviews, ratings, and recommendations.
+                </p>
+                <p>
+                    Whether you're searching for hidden gems or trending hotspots,
+                    we help you find your next favorite meal.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+</html>
