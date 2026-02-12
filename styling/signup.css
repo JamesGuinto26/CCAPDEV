@@ -101,7 +101,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 80px;
+    padding: 120px 20px; 
+    position: relative;   
+    overflow: hidden;
 }
 
 .signup::before {
