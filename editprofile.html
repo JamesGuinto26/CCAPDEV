@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Profile</title>
+    <link rel="stylesheet" href="styling/editProfile.css">
+</head>
+<body>
+
+<nav class="nav-bar">
+    <a href="HomePage.html" class="nav-logo">
+        <h2 class="logo-text">🍟 EATSTAGRAM</h2>
+    </a>
+    <ul class="nav-links">
+        <a href="HomePage.html">HOME</a>
+        <li class="dropdown">
+            <a href="#">RESTAURANTS</a>
+            <ul class="dropdown-menu">
+                <li><a href="searchResto.html">Search Restaurants</a></li>
+                <li><a href="viewRestaurants.html">View Restaurants</a></li>
+            </ul>
+        </li>
+        <li class="dropdown">
+            <a href="#">REVIEWS</a>
+            <ul class="dropdown-menu">
+                <li><a href="#">Search Reviews</a></li>
+                <li><a href="#">My Reviews</a></li>
+            </ul>
+        </li>
+        <li class="dropdown-pfp">
+            <img src="images/profile.png" alt="Profile">
+            <ul class="dropdown-menu">
+                <li><a href="profile.html">View Profile</a></li>
+                <li><a href="editProfile.html">Edit Profile</a></li>
+                <li><a href="intro.html">Logout</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+
+
+<section class="edit-profile">
+    <form class="edit-card">
+        <h2>Edit Profile</h2>
+        <label>Username</label>
+        <input type="text" placeholder="Enter new username">
+        <div class="avatar-section">
+            <label class="avatar-label">Profile Avatar</label>
+            <div class="avatar-container">
+                <div class="avatar-preview">
+                    <img src="images/profile.png" alt="Current Avatar">
+                </div>
+                <div class="avatar-upload">
+                    <input type="file" accept="image/*">
+                    <p class="avatar-note">Upload a new profile picture</p>
+                </div>
+            </div>
+        </div>
+        <label>Short Description</label>
+        <textarea placeholder="Write something about yourself..."></textarea>
+        <div class="btn-container">
+            <button type="submit" class="btn-main">Save</button>
+            <a href="profile.html" class="btn-main">Cancel</a>
+        </div>
+    </form>
+</section>
+</body>
+</html>
