@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Page - EATSTAGRAM</title>
+    <link rel = "stylesheet" href = "styling/restoReview.css">
+</head>
+<body>
+    <header>
+        <nav class = "nav-bar">
+            <a href = "HomePage.html" class = "nav-logo">
+                <h2 class = "logo-text">🍟 EATSTAGRAM</h2>
+            </a>
+            
+            <ul class="nav-links">
+
+                <a href = "HomePage.html">HOME</a>
+
+                <li class="dropdown">
+                    <a href="#">RESTAURANTS</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="viewRestaurants.html">View Restaurants</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#">REVIEWS</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="searchReviews.html">Search Reviews</a></li>
+                        <li><a href="#">My Reviews</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown-pfp">
+                    <img src="images/profile.png">
+                    <ul class="dropdown-menu">
+                        <li><a href="#">View Profile</a></li>
+                        <li><a href="#">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+   
+    <div class="restaurant-header">
+        <div class="overlay">
+            <h1 class="restaurant-name">Crisostomos 🍴</h1>
+            <p class="restaurant-location">Manila, Philippines</p>
+            <span class="rating">⭐ 4.9 / 5</span>
+        
+
+            <div class="buttons">
+                <button class="btn">Add Review</button>
+                <button class="btn">Recommend</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="reviews-section">
+    <h2 class="reviews-title">User Reviews</h2>
+
+    <div class="review-card">
+        <img src="images/luffy.jpg" class="review-pfp">
+
+        <div class="review-content">
+            <div class="review-header">
+                <span class="review-name">Monkey D. Luffy</span>
+                <span class="review-stars">⭐⭐⭐⭐⭐</span>
+            </div>
+            <p class="review-text">
+                Everything was good. Staff was hospitable and quick to attend to you. I ordered all my favorite Filipino dishes and they did not disappoint. 
+                Love the mango with shrimp paste for appetizer. Restaurant is inside a mall. Very clean. I recommend this restaurant.
+            </p>
+
+            <button class="helpful-btn">👍 Mark as Helpful</button>
+        </div>
+    </div>
+
+    <div class="review-card">
+        <img src="images/zoro.jpg" class="review-pfp">
+
+        <div class="review-content">
+            <div class="review-header">
+                <span class = "review-name">Roronoa Zoro</span>
+                <span class="review-stars">⭐⭐⭐⭐</span>
+            </div>
+            <p class="review-text">
+                This restaurant is located at the tail end of Newport Boulevard. There are plenty of places you can walk to but I'm glad we stumbled upon this one. 
+                I'm a sucker for interior design and the pictures don't do it justice. Props to whoever designed this restaurant. We went there for lunch and there 
+                was no line. Although the place was full, we got our food in no more than 15 minutes. The food itself was delicious. No complaints at all.
+            </p>
+
+            <button class="helpful-btn">👍 Mark as Helpful</button>
+        </div>
+    </div>
+
+    <div class="review-card">
+        <img src="images/sanji.jpg" class="review-pfp">
+
+        <div class="review-content">
+            <div class="review-header">
+                <span class="review-name">Vinsmoke Sanji</span>
+                <span class="review-stars">⭐⭐⭐⭐</span>
+            </div>
+            <p class="review-text">
+                Great food, atmosphere and service. There's nothing to complain about. My favorite item were the fish balls and cheesy corn. 
+                The crispy pata were also delicious. The staff was friendly and quick to attend to you.
+            </p>
+
+            <button class="helpful-btn">👍 Mark as Helpful</button>
+        </div>
+    </div>
+</div>
+
+</body>
+
+
+</html>
