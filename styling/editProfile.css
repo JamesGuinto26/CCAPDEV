@@ -151,7 +151,7 @@
 }
 
 .edit-card {
-    background: rgb(49, 103, 175);
+    background: rgb(44, 84, 136);
     padding: 40px;
     border-radius: 30px;
     width: 600px;
@@ -232,4 +232,5 @@
     color: white;
     border-color: white;
 }
+
     
