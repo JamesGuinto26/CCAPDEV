@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Reviews | EATSTAGRAM</title>
+    <link rel = "stylesheet" href = "styling/search.css">
+</head>
+<body>
+    <header>
+        <nav class = "nav-bar">
+            <a href = "HomePage.html" class = "nav-logo">
+                <h2 class = "logo-text">🍟 EATSTAGRAM</h2>
+            </a>
+            
+            <ul class="nav-links">
+
+                <a href = "HomePage.html">HOME</a>
+                
+                <li class="dropdown">
+                    <a href="#">RESTAURANTS</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="viewRestaurants.html">View Restaurants</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#">REVIEWS</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="searchReviews.html">Search Reviews</a></li>
+                        <li><a href="#">My Reviews</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown-pfp">
+                    <img src="images/profile.png">
+                    <ul class="dropdown-menu">
+                        <li><a href="profile.html">View Profile</a></li>
+                        <li><a href="editProfile.html">Edit Profile</a></li>
+                        <li><a href="intro.html">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class = "main-container">
+
+        <div class = "filter-panel">
+            <h3>Filter by restaurant</h3>
+
+            <label>
+                <input type = "checkbox" value = "chilis"> Chili's
+            </label>
+
+            <label>
+                <input type = "checkbox" value = "chele"> Gallery By Chele
+            </label>
+
+            <label>
+                <input type = "checkbox" value = "seascape"> Seascape Village
+            </label>
+
+            <label>
+                <input type = "checkbox" value = "barcino"> Barcino
+            </label>
+
+            <label>
+                <input type = "checkbox" value = "manam"> Manam
+            </label>
+
+            <label>
+                <input type = "checkbox" value = "lacreperie"> La Creperie
+            </label>
+
+            <label>
+                <input type = "checkbox" value = "crisostomo"> Crisostomo
+            </label>
+        </div>
+
+        <div class = "content">
+            <h2>Search for Reviews</h2>
+            <input type = "text" id = "searchInput" placeholder = "Search reviews...">
+
+            <div class = "reviews">
+                <div class="review chilis">
+                    <h4 class="resto-name">Chili's</h4>
+                    Amazing chicken and fast service. I also like the quesadilla.
+                </div>
+
+                <div class="review chele">
+                    <h4 class="resto-name">Gallery By Chele</h4>
+                    The foods are yummy but the serving could be better for the price.
+                </div>
+
+                <div class="review seascape">
+                    <h4 class="resto-name">Seascape Village</h4>
+                    I love seafoods!
+                </div>
+
+                <div class="review barcino">
+                    <h4 class="resto-name">Barcino</h4>
+                    Eating here makes you feel like you're in Spain.
+                </div>
+
+                <div class="review manam">
+                    <h4 class="resto-name">Manam</h4>
+                    A lot of classic Filpino cuisine with various modern twists. I really like the crispy sisig.
+                </div>
+
+                <div class="review lacreperie">
+                    <h4 class="resto-name">La Creperie</h4>
+                    Lots of good desserts. Perfect place for anyone with a sweet tooth.
+                </div>
+
+                <div class="review crisostomo">
+                    <h4 class="resto-name">Crisostomo</h4>
+                    A classic favorite spot for me. It brings back many memories when I was a kid.
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="javascript/search.js"></script>
+
+</body>
+
+</html>
