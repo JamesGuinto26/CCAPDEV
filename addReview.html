@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Review - EATSTAGRAM</title>
+    <link rel = "stylesheet" href = "styling/addReview.css">
+</head>
+<body>
+    <header>
+        <nav class = "nav-bar">
+            <a href = "HomePage.html" class = "nav-logo">
+                <h2 class = "logo-text">🍟 EATSTAGRAM</h2>
+            </a>
+            
+            <ul class="nav-links">
+
+                <a href = "HomePage.html">HOME</a>
+
+                <li class="dropdown">
+                    <a href="#">RESTAURANTS</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="viewRestaurants.html">View Restaurants</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#">REVIEWS</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="searchReviews.html">Search Reviews</a></li>
+                        <li><a href="#">My Reviews</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown-pfp">
+                    <img src="images/profile.png">
+                    <ul class="dropdown-menu">
+                        <li><a href="profile.html">View Profile</a></li>
+                        <li><a href="editProfile.html">Edit Profile</a></li>
+                        <li><a href="intro.html">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="review-container">
+        <div class="review-card">
+
+            <div class="review-image">
+                <img src="/images/crisostomoFoods.jpeg">
+            </div>
+
+            <div class="review-form-container">
+                <h2>Leave a Review</h2>
+                <form class="review-form" enctype="multipart/form-data">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name">
+
+                    <label for="rating">Rating</label>
+                    <select id="rating" name="rating">
+                        <option value="">Select Rating</option>
+                        <option value="5">⭐⭐⭐⭐⭐ - Excellent</option>
+                        <option value="4">⭐⭐⭐⭐ - Very Good</option>
+                        <option value="3">⭐⭐⭐ - Good</option>
+                        <option value="2">⭐⭐ - Fair</option>
+                        <option value="1">⭐ - Poor</option>
+                    </select>
+
+                    <label for="review">Review</label>
+                    <textarea id="review" name="review" rows="5" placeholder="Write your review..." required></textarea>
+
+                    <label for="image">Upload an Image (optional)</label>
+                    <input type="file" id="image" name="image" accept="image/*">
+
+                    <button type="submit">Submit Review</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+    
+</body>
+
+
+</html>
