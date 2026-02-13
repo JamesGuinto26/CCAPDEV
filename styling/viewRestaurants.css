@@ -306,3 +306,8 @@ html, body {
     cursor: pointer;
 }
 
+.restaurant-card h2 {
+    color: white;
+    padding-top: 10px;
+    font-size: 18px;
+}
